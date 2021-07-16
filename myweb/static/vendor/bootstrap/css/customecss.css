@@ -1,0 +1,52 @@
+@font-face {
+  font-family: "Mulia";
+  src: local("Mulia"), url("/static/vendor/font/muli.woff2") format("woff2");
+}
+
+body {
+  background-color: burlywood;
+  font-family: "Mulia";
+}
+.navbar {
+  background-color: rgb(235, 224, 224);
+}
+
+.navbar-nav {
+  padding: 10px 0 10px 20px;
+}
+
+.herosatu h1{
+  margin-top: 50px;
+  text-align: justify;
+  font-weight: 900;
+  
+}
+.herosatu p{
+  margin-top: 40px;
+  text-align: center;
+}
+.herosatu button{
+  color: white;
+  outline: none;
+  margin-top: 40px;
+   
+ 
+}
+
+.img-hero{
+  margin-top: 40px;
+  /* background-color: brown; */
+ 
+}
+.content{
+  border: none;
+  border-radius: 0;
+  
+}
+.content2{
+  /* border: none; */
+  border-radius: 0;
+  margin-top: 30px;
+  background-color: rgb(201, 219, 99);
+  
+}

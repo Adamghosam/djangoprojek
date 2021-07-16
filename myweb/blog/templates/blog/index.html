@@ -1,7 +1,71 @@
 {% extends "snipet/base.html" %}
 
+{% load static %}
 
+
+
+<!-- section content -->
 {% block content %}
+<!-- section hero -->
+<section class="hero">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="herosatu">
+                    <h1>Welcome To My Website  Adam Ghosam</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore porro at reprehenderit aliquam? Adipisci veritatis corrupti harum, quae nemo culpa quos at vero magnam facilis molestiae totam rerum reiciendis. Accusantium.</p>
+                    <button type="button" class="btn btn-warning">Get Lear more</button>
+                    
+                </div>
+            </div>
+            <div class="col">
+                <img class="img-hero" width="600px" src="{% static 'images/Img1.svg' %}">
+            </div>
+        </div>
+    </div>
+</section>
+<!-- end section hero -->
 
-<h1>testing</h1>
+<!-- section to cnten -->
+
+<section class="artikel">
+    <div class="card content">
+        <div class="container">
+            <figure class="mt-4">
+                <blockquote class="blockquote">
+                    <h3>Artikel Terbaru</h3>
+                </blockquote>
+                <figcaption class="blockquote-footer">
+                    Someone famous in <cite title="Source Title">Source Title</cite>
+                </figcaption>
+            </figure>
+            <!-- card artikel -->
+            <div class="row">
+               
+                <div class="col-sm-4 ">
+                  <div class="card mb-4">
+                    <div class="card-body">
+                        <div class="card">
+                            <img  width="318px" height="166px" src="{% static 'images/Img1.svg' %}">
+                        </div>
+                      <p class="fw-bold text-start mt-1">Ini Judul Atu title</p>
+                      <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            <!-- end card artkel -->
+
+
+        </div>
+    </div>
+    
+</section>
+<!--end  section to cnten -->
+
+
+
+
+
 {% endblock %}
+<!-- endcontent -->
