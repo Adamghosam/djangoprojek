@@ -1,5 +1,10 @@
 {% extends "snipet/base.html" %}
+{% load static %}
 
 {% block content %}
-<h1>ini halaman home</h1>
+<h1>ini halaman Artikel</h1>
+
+<div class="container">
+    <img width="160px" height="160px" src="{% static 'images/html.jpg'%}" class="rounded" alt="...">
+</div>
 {% endblock %}

@@ -33,26 +33,29 @@
         <div class="container">
             <figure class="mt-4">
                 <blockquote class="blockquote">
-                    <h3>Artikel Terbaru</h3>
+                    <h3 class="fw-bold">Artikel Terbaru</h3>
                 </blockquote>
                 <figcaption class="blockquote-footer">
-                    Someone famous in <cite title="Source Title">Source Title</cite>
+                    Update Terbaru : <cite title="Source Title">{{time}}</cite>
                 </figcaption>
+         
             </figure>
             <!-- card artikel -->
             <div class="row">
-               
+               {% for postingan in post%}
                 <div class="col-sm-4 ">
                   <div class="card mb-4">
                     <div class="card-body">
                         <div class="card">
                             <img  width="318px" height="166px" src="{% static 'images/Img1.svg' %}">
                         </div>
-                      <p class="fw-bold text-start mt-1">Ini Judul Atu title</p>
-                      <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                      <p class="fw-bold text-start mt-1">{{postingan.title}}</p>
+                      <p class="card-text">{{postingan.content}}</p>
+                      <p class="card-text">{{postingan.releasedat}}</p>
                     </div>
                   </div>
                 </div>
+                {% endfor %}
               </div>
             <!-- end card artkel -->
 
